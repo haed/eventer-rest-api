@@ -1,16 +1,18 @@
 The Eventer API
 ===============
 
+This is the official documentation of the public Eventer REST-API, with which you can search and receive informations about events.
+
 
 Making a request
 ----------------
 
 All URLs start with `http://api.my-eventer.de/v1/`. **(TODO: SSL only)**. The path is prefixed with the API version. If we change the API in backward-incompatible ways, we'll bump the version marker and maintain stable support for the old URLs.
 
-Here's a simple example to grab some events:
+Here's a simple example to search for upcoming "Party"-events:
 
 ```shell
-curl -s http://api.my-eventer.de/v1/events
+curl -s http://api.my-eventer.de/v1/events?search=Party
 ```
 
 
@@ -22,6 +24,12 @@ We only support JSON for serialization of data. Our format is to have no root el
 You'll receive a `415 Unsupported Media Type` response code if you leave out the `Content-Type` header.
 
 TODO: date formats
+
+
+GET/POST methods
+----------------
+
+TODO
 
 
 Pagination & Limit
