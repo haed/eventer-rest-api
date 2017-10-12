@@ -1,7 +1,9 @@
 The Eventer API
 ===============
 
-This is the official documentation of the public Eventer REST-API, with which you can search and receive informations about events.
+This is the official documentation of the public Eventer REST-API, with which you can search and receive informations about events in Germany.
+
+***Note: Because this project is in beta stage the offered events are restricted to the Chemnitz area in Saxony / Germany.***
 
 
 Making a request
