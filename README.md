@@ -27,7 +27,13 @@ TODO: date formats
 Pagination & Limit
 ------------------
 
-Most collection APIs paginate their results. Normally you can specify a limit with the parameter `limit` which must be greater than 0 and lower than 101 (default: 10). If there are more results to paginate for you will get a `cursor` in the reposonse which can be used as parameter for the next request `&cursor=foo`, and so on until you get a response without cursor.
+Most collection APIs paginate their results. Normally you can specify a limit with the parameter `limit` which must be greater than 0 and lower than 101 (default: 10). If there are more results to paginate for, you will get a `cursor` in the response which can be used as parameter for the next request (e.g. `&cursor=foo`), and so on until you get a response without cursor.
+
+
+Authentication
+--------------
+
+This is an open API without authentication.
 
 
 API ready for use
