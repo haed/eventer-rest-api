@@ -21,8 +21,8 @@ parameter | description
 `categories` | A comma separated list of event categories to search for (not all events are categorized yet). If not specified all events of all categories (or without category) will be returned.<br/><br/>Note: also you can exclude categories from the result by using `!` as a category suffix.<br/><br/>Currently the following categories are supported: <ul><li>movie</li></ul>
 `google_place_ids` | A comma separated list of ids of google places to restrict search to events from these places only.<br/><br/>You can use the google maps api to search for google place ids: [google place id finder](https://developers.google.com/maps/documentation/javascript/examples/places-placeid-finder)
 `search` | Searches events by a free text search.
-`updated_since` | If set only events will be returned which has been added or modified since the given timestamp. Can be used for synchronization and fetch scenarios.
-`limit` | Sets the limit how much events should be returned by the response. Limit must be greater than 0 and lower than 101. If not set a the default limit will be 10.<br/><br/>See [Pagination & limit](https://github.com/haed/eventer-rest-api/blob/master/README.md#pagination--limit) for details.
+`updated_since` | If set only events will be returned which has been added or modified since the given timestamp. Can be used for synchronization or fetch scenarios.
+`limit` | Sets the limit how much events should be returned by the response. Limit must be greater than 0 and lower than 101. If not set the default limit will be 10.<br/><br/>See [Pagination & limit](https://github.com/haed/eventer-rest-api/blob/master/README.md#pagination--limit) for details.
 `cursor` | Continues a search by an "offset" specified by this cursor. Any event search could return a cursor which represents an offset to paginate to the next events. To use a cursor you have the re-run the request with same parameters again but with the given cursor value to retrieve the next events of your search behind the limit.<br/><br/>See [Pagination & limit](https://github.com/haed/eventer-rest-api/blob/master/README.md#pagination--limit) for details.
 
 
