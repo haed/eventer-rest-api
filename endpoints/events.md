@@ -28,7 +28,7 @@ parameter | description
 
 ## Reponse
 
-Example:
+Example response:
 ```json
 {
     "events": [
