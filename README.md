@@ -9,12 +9,12 @@ This is the official documentation of the public Eventer REST-API, with which yo
 Making a request
 ----------------
 
-All URLs start with `http://api.my-eventer.de/v1/`. **(TODO: SSL only)**. The path is prefixed with the API version. If we change the API in backward-incompatible ways, we'll bump the version marker and maintain stable support for the old URLs.
+All URLs start with `https://api.my-eventer.de/v1/`. The path is prefixed with the API version. If we change the API in backward-incompatible ways, we'll bump the version marker and maintain stable support for the old URLs.
 
 Here's a simple example to search for upcoming "Party"-events:
 
 ```shell
-curl -s http://api.my-eventer.de/v1/events?search=Party
+curl -s https://api.my-eventer.de/v1/events?search=Party
 ```
 
 
