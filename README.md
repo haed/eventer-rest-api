@@ -16,21 +16,14 @@ curl -s https://api.my-eventer.de/v1/events?search=Party
 ```
 
 
-## No XML, just JSON
-
-We only support JSON for serialization of data. Our format is to have no root element and we use snake\_case to describe attribute keys. This means that you have to send `Content-Type: application/json; charset=utf-8` when you're POSTing or PUTing data into Eventer.
-
-You'll receive a `415 Unsupported Media Type` response code if you leave out the `Content-Type` header.
-
-
-## Date/time encoding
-
-All timestamps (for requests and responses) are encoded in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) with the following format: `YYYY-MM-DD'T'HH:mm'Z'`. The timezone used in responses is `UTC`.
-
-
 ## GET/POST methods
 
-TODO
+All endpoints will be available for POST requests with a body including the parameters in json (`Content-Type: application/json; charset=utf-8`). Additionally some endpoints support GET methods for easier usage. Parameters for GET requests must be `application/x-www-form-urlencoded`. Parameter names will use the snake\_case format.
+
+
+## Date format
+
+All timestamps (for requests and responses) are encoded in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) with the following format: `YYYY-MM-DD'T'HH:mm'Z'`. The timezone used in responses is `UTC`.
 
 
 ## Pagination & Limit
