@@ -25,7 +25,7 @@ You'll receive a `415 Unsupported Media Type` response code if you leave out the
 
 ## Date/time encoding
 
-All timestamps (for requests and responses) are encoded in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) with the following format: `YYYY-MM-DD'T'HH:mm'Z'` (example: 2017-10-15T16:00:00.000Z). The timezone used in responses is `UTC`.
+All timestamps (for requests and responses) are encoded in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) with the following format: `YYYY-MM-DD'T'HH:mm'Z'`. The timezone used in responses is `UTC`.
 
 
 ## GET/POST methods
