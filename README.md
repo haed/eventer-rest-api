@@ -11,7 +11,9 @@ All URLs start with `https://api.my-eventer.de/v1/`. The path is prefixed with t
 
 Here's a simple example to search for upcoming "Party"-events:
 
-[https://api.my-eventer.de/v1/events?search=Party](https://api.my-eventer.de/v1/events?search=Party)
+```shell
+curl -s https://api.my-eventer.de/v1/events?search=Party
+```
 
 
 ## GET/POST methods
