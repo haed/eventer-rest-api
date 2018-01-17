@@ -29,7 +29,7 @@ parameter | description
 
 ## POST request parameters
 
-Same as described GET request parameters (see also: [GET/POST methods](https://github.com/haed/eventer-web-api#getpost-methods)), but the following parameters are different:
+Same as described GET request parameters (see also: [GET/POST methods](https://github.com/haed/eventer-web-api#getpost-methods)), but the following parameters have a different structure:
 
 parameter | description
 --------- | -----------
