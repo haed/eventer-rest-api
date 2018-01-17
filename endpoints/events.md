@@ -34,7 +34,7 @@ Same as described GET request parameters (see also: [GET/POST methods](https://g
 parameter | description
 --------- | -----------
 `geo_area` | Geo area is an object with following properties: `{top, left, bottom, right}`.  <br/><br/>Example: `{"top": 50.838948, "left": 12.912577, "bottom": 50.827132, "right": 12.933774}`.
-`geo_raster_points` | Raster points is an array of arrays with two double values. <br/><br/>Example: `[[50.83,12.91], [50.82,12.91]]`.
+`geo_raster_points` | Raster points is an array of arrays of two double values. <br/><br/>Example: `[[50.83, 12.91], [50.82, 12.91]]`.
 
 
 ## Response
