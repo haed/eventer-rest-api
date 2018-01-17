@@ -11,7 +11,7 @@ Examples:
 All returned events will be primarily sorted by `event.starts_at` timestamps.
 
 
-## Request parameters
+## GET request parameters
 
 parameter | description
 --------- | -----------
@@ -34,49 +34,59 @@ Example response:
 {
     "events": [
         {
-            "id": 5007441972428800,
-            "title": "Die Hochzeit des Figaro",
-            "description": "An seinem Hochzeitstag erfährt Figaro, dass sein Freund Graf Almaviva seiner Braut nachstellt, zumal Figaro dem Schürzenjäger Almaviva die Wege für dessen Frauengeschichten ebnete. Nun führt einer der Wege aber in sein eigenes Schlafzimmer.",
-            "google_place_id": "ChIJ8aXQ2iwqckERIgNrPqoGhkQ",
-            "starts_at": "2017-10-15T16:00:00.000Z"
+            "id": 5128325034934272,
+            "title": "´S wär schon schön",
+            "description": "Gestern war heute Morgen, und übermorgen ist auch noch ein Tag. Doch etwas muss passieren, so geht's nicht weiter. Und was sagt eigentlich Mutti? Wenn unter einem Dach drei Generationen leben, haben nicht nur die ihren Spaß, sondern auch das Publikum.",
+            "google_place_id": "ChIJabRmd1lGp0cRiBOpVGgAKx4",
+            "updated_at": "2018-01-10T18:45:41.374Z",
+            "starts_at": "2018-01-20T16:00:00.000Z"
         },
         {
-            "id": 5907333720834048,
-            "title": "Peter Pan - Fliege deinen Traum!",
-            "description": "Als die Eltern nachts ausgegangen sind, fliegen Wendy, John und Michael Darling mit Peter Pan nach Nimmerland, der Insel der ewigen Kindheit und erleben dort die wunderlichsten Abenteuer. Alles nur ein Traum? Mitreißendes und poetisches Musical.",
-            "google_place_id": "ChIJc7ob_KmtoEcRQcLWddwXRRE",
-            "starts_at": "2017-10-15T17:00:00.000Z"
+            "id": 6050746571161600,
+            "title": "2. Basketball-Bundesliga ProA",
+            "categories": [
+                "sport"
+            ],
+            "google_place_id": "ChIJleR_61lGp0cRrD7wwgVz6fA",
+            "updated_at": "2018-01-10T18:47:00.662Z",
+            "starts_at": "2018-01-20T18:00:00.000Z"
         },
         {
-            "id": 4662429128589312,
-            "title": "hautnah! - Musikgeschichte(n) mit Sebastian Krumbiegel",
-            "description": "Der Frontmann der „Prinzen“ gründete bereits in der Schule 1981 seine erste Band, kaufte sich vom eigenen Geld ein Schlagzeug und studierte an der Leipziger Musikhochschule. Er erzählt von seinem Leben zwischen Popband und Engagement gegen Rechts.",
-            "google_place_id": "ChIJK8JQU-9Ip0cRFDaGuD-Fw1k",
-            "starts_at": "2017-10-15T17:30:00.000Z"
+            "id": 6238292492156928,
+            "title": "Bombenstimmung",
+            "description": "Konzerne freuen sich über die Kreditschwemme, Rüstungsschmieden auf Aufträge, Taxifahrer auf den Mindestlohn und Familien auf die Kindergelderhöhung um 2 €. Nur bei Griechen und Asylbewerbern ist die Freude noch getrübt. Doch Abhilfe ist in Sicht.",
+            "google_place_id": "ChIJabRmd1lGp0cRiBOpVGgAKx4",
+            "updated_at": "2018-01-10T18:47:31.389Z",
+            "starts_at": "2018-01-20T19:00:00.000Z"
         },
         {
-            "id": 4637810107613184,
-            "title": "Doppelkonzert: Giovanni Weiss & Django Deluxe",
-            "description": "Das Giovanni Weiss-Quartett Django Deluxe steht ganz in der Tradition des großen Gypsy-Swing-Meisters Django Reinhardt. Neben den klassischen Sinti-Klängen ist Weiss jedoch auch beeinflusst von Musikern wie Wes Montgomery, George Benson und Pat Metheny",
-            "google_place_id": "ChIJMRsSZcT5pkcRRW_wBP-MjpU",
-            "starts_at": "2017-10-15T18:00:00.000Z"
+            "id": 6043889655873536,
+            "title": "English Comedy Showcase #18",
+            "description": "Das Show-Format für Liebhaber amerikanischer TV-Serien und Englisch-Lernende in englischer Sprache. Zu Gast sind Miles Lloyd und Tim Whelan.",
+            "google_place_id": "ChIJgYD4qVBGp0cRILA3_lFAsuI",
+            "updated_at": "2018-01-10T18:46:59.854Z",
+            "starts_at": "2018-01-20T19:30:00.000Z"
         },
         {
-            "id": 6356852245790720,
-            "title": "Poetry Slam mit I-Slam",
-            "description": "Ursprünglich als muslimische Version des Poetry Slams gestartet, sind neben Chemnitzer Slammern auch Künstler des Berliner Vereins I-Slam zu Gast. Vor dem Hintergrund des Empowerment-Gedanken setzen sie  klare Zeichen gegen Rassismus und Stereotypen.",
-            "google_place_id": "ChIJQXmv10JGp0cROM6S5hB1AG8",
-            "starts_at": "2017-10-15T18:00:00.000Z"
+            "id": 5119862875619328,
+            "title": "Nils Holgersson",
+            "description": "Vogelforscher Lundgren findet eine graue Feder und sofort fällt ihm die Geschichte von Nils Holgersson ein, einem Jungen, der auf dem Rücken eines weißen Gänserichs versucht, einer Schar Wildgänse zu folgen. Kreatives Schauspiel für Kinder ab 4.",
+            "google_place_id": "ChIJgYD4qVBGp0cRILA3_lFAsuI",
+            "updated_at": "2018-01-10T18:45:40.349Z",
+            "starts_at": "2018-01-21T14:30:00.000Z"
         }
     ],
-    "cursor": "WzE1MDgwOTA0MDAsImV2ZW50IzYzNTY4NTIyNDU3OTA3MjAiXQ==",
+    "cursor": "WzE1MTY1NDUwMDAsImV2ZW50IzUxMTk4NjI4NzU2MTkzMjgiXQ==",
     "request": {
         "limit": 5,
-        "starts_at_min": "2017-10-15T15:00:00.000Z",
-        "categories": [
-            "!movie"
+        "starts_at_min": "2018-01-20T12:00:00.000Z",
+        "geo_raster_points": [
+            [
+                50.83,
+                12.91
+            ]
         ]
     },
-    "timestamp": "2017-10-15T20:51:01.558Z"
+    "timestamp": "2018-01-17T08:56:08.542Z"
 }
 ```
