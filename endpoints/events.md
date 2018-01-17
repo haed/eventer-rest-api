@@ -26,16 +26,17 @@ parameter | description
 `limit` | Sets the limit how much events should be returned by the response. Limit must be greater than 0 and lower than 101. If not set the default limit will be 10.<br/><br/>See [Pagination & limit](https://github.com/haed/eventer-rest-api/blob/master/README.md#pagination--limit) for details.
 `cursor` | Continues a search by an "offset" specified by this cursor. Any event search could return a cursor which represents an offset to paginate to the next events. To use a cursor you have the re-run the request with same parameters again but with the given cursor value to retrieve the next events of your search behind the limit.<br/><br/>See [Pagination & limit](https://github.com/haed/eventer-rest-api/blob/master/README.md#pagination--limit) for details.
 
+
 ## POST request parameters
 
-Same as described GET request parameters, but the following parameters are different:
+Same as described GET request parameters (see also: [GET/POST methods](https://github.com/haed/eventer-web-api#getpost-methods)), but the following parameters are different:
 
 parameter | description
 --------- | -----------
 `geo_area` | Geo area is an object with `{top, left, bottom, right}`.  <br/><br/>Example value for the inner city of Chemnitz: `{"top": 50.838948, "left": 12.912577, "bottom": 50.827132, "right": 12.933774}`.
 
 
-## Reponse
+## Response
 
 Example response:
 ```json
