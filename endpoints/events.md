@@ -18,7 +18,7 @@ parameter | description
 `starts_at_min` | The minimum starts-at timestamp for events. If not given the default value will be *now*.
 `starts_at_max` | The maximum starts-at timestamp for events.
 `geo_area` | Restricts the event search to a geo area bounding box specified by 4 comma separated coordinates: top (latitude), left (longitude), bottom (latitude) and right (longitude). <br/><br/>Example value for the inner city of Chemnitz: `50.838948,12.912577,50.827132,12.933774`.
-`geo_raster_points` | Restricts the event search to a geo areas specified by "raster points". A raster point is a latitude/longitude combination of double values rounded off to 2 decimal places (separated by a semicolon). For example the "raster point" `50.83;12.91` restricts events to locations within a latitude starting with `50.83` and longitude starting with `12.91`. <br/><br/>Example for a list of raster points: `50.83;12.91,50.82,12.91`.
+`geo_raster_points` | Restricts the event search to a geo areas specified by "raster points". A raster point is a latitude/longitude combination of double values rounded off to 1 decimal place (separated by a semicolon). For example the "raster point" `50.8;12.9` restricts events to locations within a latitude starting with `50.8` and longitude starting with `12.9`. <br/><br/>Example for a list of raster points: `50.8;12.9,50.9,12.9`.
 `categories` | A comma separated list of event categories to search for (not all events are categorized yet). If not specified all events of all categories (or without category) will be returned.<br/><br/>Note: also you can exclude categories from the result by using `!` as a category suffix.<br/><br/>Currently the following categories are supported: <br/>`meetup`, `movie`
 `google_place_ids` | A comma separated list of ids of google places to restrict search to events from these places only.<br/><br/>You can use the google maps api to search for google place ids: [google place id finder](https://developers.google.com/maps/documentation/javascript/examples/places-placeid-finder)
 `search` | Searches events by a free text search.
@@ -34,7 +34,7 @@ Same as described GET request parameters (see also: [GET/POST methods](https://g
 parameter | description
 --------- | -----------
 `geo_area` | Geo area is an object with following properties: `{top, left, bottom, right}`.  <br/><br/>Example: `{"top": 50.838948, "left": 12.912577, "bottom": 50.827132, "right": 12.933774}`.
-`geo_raster_points` | Raster points is an array of arrays of two double values. <br/><br/>Example: `[[50.83, 12.91], [50.82, 12.91]]`.
+`geo_raster_points` | Raster points is an array of arrays of two double values. <br/><br/>Example: `[[50.8, 12.9], [50.9, 12.9]]`.
 
 
 ## Response
@@ -92,8 +92,8 @@ Example response:
         "starts_at_min": "2018-01-20T12:00:00.000Z",
         "geo_raster_points": [
             [
-                50.83,
-                12.91
+                50.8,
+                12.9
             ]
         ]
     },
