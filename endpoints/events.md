@@ -3,10 +3,10 @@
 Use this endpoint to search for events. This endpoint supports [GET and POST requests](https://github.com/haed/eventer-rest-api/blob/master/README.md#getpost-methods).
 
 Examples:
-* `GET /v1/events?geo_area=50.838948,12.912577,50.827132,12.933774` will return events from the inner city of Chemnitz.
-* `GET /v1/events?categories=movie` will return only movies.
-* `GET /v1/events?categories=!movie` will return events which are not movies.
-* `GET /v1/events?search=Party` will search for "Party" events.
+* [`GET https://api.my-eventer.de/v1/events?geo_area=50.838948,12.912577,50.827132,12.933774`](https://api.my-eventer.de/v1/events?geo_area=50.838948,12.912577,50.827132,12.933774) will return events from the inner city of Chemnitz.
+* [`GET https://api.my-eventer.de/v1/events?categories=movie`](https://api.my-eventer.de/v1/events?categories=movie) will return only movies.
+* [`GET https://api.my-eventer.de/v1/events?categories=!movie`](https://api.my-eventer.de/v1/events?categories=!movie) will return events which are not movies.
+* [`GET https://api.my-eventer.de/v1/events?search=Party`](https://api.my-eventer.de/v1/events?search=Party) will search for "Party" events.
 
 All returned events will be primarily sorted by `event.starts_at` timestamps.
 
