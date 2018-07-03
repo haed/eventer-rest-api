@@ -3,10 +3,9 @@
 Use this endpoint to search for events. This endpoint supports [GET and POST requests](https://github.com/haed/eventer-rest-api/blob/master/README.md#getpost-methods).
 
 Examples:
-* [`GET https://api.my-eventer.de/v1/events?geo_area=50.838948,12.912577,50.827132,12.933774`](https://api.my-eventer.de/v1/events?geo_area=50.838948,12.912577,50.827132,12.933774) will return events from the inner city of Chemnitz.
-* [`GET https://api.my-eventer.de/v1/events?categories=movie`](https://api.my-eventer.de/v1/events?categories=movie) will return only movies.
-* [`GET https://api.my-eventer.de/v1/events?categories=!movie`](https://api.my-eventer.de/v1/events?categories=!movie) will return events which are not movies.
-* [`GET https://api.my-eventer.de/v1/events?search=Party`](https://api.my-eventer.de/v1/events?search=Party) will search for "Party" events.
+* [`GET https://api.eventer.app/v1/events?geo_area=50.838948,12.912577,50.827132,12.933774`](https://api.eventer.app/v1/events?geo_area=50.838948,12.912577,50.827132,12.933774) will return events from the inner city of Chemnitz.
+* [`GET https://api.eventer.app/v1/events?categories=movie`](https://api.eventer.app/v1/events?categories=movie) will return only movies.
+* [`GET https://api.eventer.app/v1/events?search=Party`](https://api.eventer.app/v1/events?search=Party) will search for "Party" events.
 
 All returned events will be primarily sorted by `event.starts_at` timestamps.
 
@@ -19,7 +18,7 @@ parameter | description
 `starts_at_max` | The maximum starts-at timestamp for events.
 `geo_area` | Restricts the event search to a geo area bounding box specified by 4 comma separated coordinates: top (latitude), left (longitude), bottom (latitude) and right (longitude). <br/><br/>Example value for the inner city of Chemnitz: `50.838948,12.912577,50.827132,12.933774`.
 `geo_raster_points` | Restricts the event search to a geo areas specified by "raster points". A raster point is a latitude/longitude combination of double values rounded off to 1 decimal place (separated by a semicolon). For example the "raster point" `50.8;12.9` restricts events to locations within a latitude starting with `50.8` and longitude starting with `12.9`. <br/><br/>Example for a list of raster points: `50.8;12.9,50.9,12.9`.
-`categories` | A comma separated list of event categories to search for (not all events are categorized yet). If not specified all events of all categories (or without category) will be returned.<br/><br/>Note: also you can exclude categories from the result by using `!` as a category suffix.<br/><br/>Currently the following categories are supported: <br/>`exhibition`, `meetup`, `movie`
+`categories` | A comma separated list of event categories to search for (not all events are categorized yet). If not specified all events of all categories (or without category) will be returned.<br/><br/>Currently the following categories are supported: <br/>`exhibition`, `meetup`, `movie`
 `google_place_ids` | A comma separated list of ids of google places to restrict search to events from these places only.<br/><br/>You can use the google maps api to search for google place ids: [google place id finder](https://developers.google.com/maps/documentation/javascript/examples/places-placeid-finder)
 `search` | Searches events by a free text search.
 `updated_since` | If set only events will be returned which has been added or modified since the given timestamp. Can be used for synchronization or fetch scenarios.
