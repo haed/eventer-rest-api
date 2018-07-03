@@ -3,7 +3,7 @@
 Use this endpoint to retrieve places. This endpoint supports [GET and POST requests](https://github.com/haed/eventer-rest-api/blob/master/README.md#getpost-methods).
 
 Examples:
-* [`GET v1/places?google_place_ids=ChIJYzs3_URGp0cRspbeorh84LM,ChIJQXmv10JGp0cROM6S5hB1AG8`](https://api.eventer.app/v1/places?google_place_ids=ChIJYzs3_URGp0cRspbeorh84LM,ChIJQXmv10JGp0cROM6S5hB1AG8) to get informations about 2 interesting locations in Chemnitz.
+* [`GET https://api.eventer.app/v1/places?google_place_ids=ChIJYzs3_URGp0cRspbeorh84LM,ChIJQXmv10JGp0cROM6S5hB1AG8`](https://api.eventer.app/v1/places?google_place_ids=ChIJYzs3_URGp0cRspbeorh84LM,ChIJQXmv10JGp0cROM6S5hB1AG8) to get informations about 2 interesting locations in Chemnitz.
 
 
 ## Request parameters
