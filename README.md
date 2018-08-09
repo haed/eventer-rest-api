@@ -4,7 +4,7 @@ This is the official documentation of the public Eventer REST-API, with which yo
 
 ***Note: Because this project is in beta stage the offered events are restricted to the Chemnitz area in Saxony / Germany.***
 
-This API is used by [Eventer](https://eventer.app), a mobile app to find local events.
+This API is used by [eventer.app](https://eventer.app), a mobile app to find local events.
 
 ## Making a request
 
