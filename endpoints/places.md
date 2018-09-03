@@ -23,7 +23,7 @@ Example response:
             "name": "Weltecho",
             "location": {
                 "lat": 50.8284307,
-                "lng": 12.9203243
+                "lon": 12.9203243
             },
             "google_place_id": "ChIJQXmv10JGp0cROM6S5hB1AG8",
             "website_url": "http://www.weltecho.eu/"
@@ -32,7 +32,7 @@ Example response:
             "name": "Kino Metropol",
             "location": {
                 "lat": 50.8283138,
-                "lng": 12.9144548
+                "lon": 12.9144548
             },
             "google_place_id": "ChIJYzs3_URGp0cRspbeorh84LM",
             "website_url": "http://www.metropol-chemnitz.de/"
